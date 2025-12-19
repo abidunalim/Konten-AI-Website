@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio Konten AI — Alam Nusantara</title>
+  <meta name="description" content="Portofolio konten AI bertema alam: konsep, gambar, prompt, dan proses kerja." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f0e;
+      --card: #121715;
+      --text: #e9f1ee;
+      --muted: #b7c2bd;
+      --accent: #44d19b;
+      --accent-2: #8fd3ff;
+      --border: #24312b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background: linear-gradient(180deg, #0b0f0e 0%, #0f1412 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    header {
+      position: sticky; top: 0; backdrop-filter: blur(8px);
+      background: rgba(11, 15, 14, 0.6); border-bottom: 1px solid var(--border);
+      z-index: 20;
+    }
+    .nav {
+      max-width: 1120px; margin: 0 auto; padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav .brand { font-weight: 700; letter-spacing: 0.4px; }
+    .nav .links a { margin-left: 18px; font-weight: 600; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 28px 20px; }
+    .hero {
+      padding: 72px 0; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: center;
+    }
+    .hero h1 { font-size: 2.2rem; margin: 0 0 12px; }
+    .hero p { color: var(--muted); margin: 0 0 20px; }
+    .btn {
+      display: inline-block; padding: 12px 18px; border-radius: 8px; border: 1px solid var(--border);
+      background: linear-gradient(180deg, #19221f 0%, #131a17 100%); color: var(--text); font-weight: 600;
+    }
+    .btn.primary { background: linear-gradient(180deg, #44d19b 0%, #1db47f 100%); color: #09110f; border-color: #38b987; }
+    .card {
+      background: linear-gradient(180deg, #131a17 0%, #121715 100%);
+      border: 1px solid var(--border); border-radius: 14px; padding: 18px;
+    }
+    .grid {
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .section-title { font-size: 1.6rem; margin: 8px 0 18px; }
+    .muted { color: var(--muted); }
+    .tag { display: inline-block; padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; font-size: 12px; color: var(--muted); margin-right: 6px; }
+    .gallery img {
+      width: 100%; height: 220px; object-fit: cover; border-radius: 10px; border: 1px solid var(--border);
+      background: #0f1412;
+    }
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li { margin-bottom: 10px; }
+    .footer {
+      border-top: 1px solid var(--border); margin-top: 28px; padding: 24px 20px; text-align: center; color: var(--muted);
+    }
+    code, pre { background: #0d1210; border: 1px solid var(--border); border-radius: 8px; }
+    pre { padding: 12px; overflow: auto; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Alam Nusantara — Portofolio AI</div>
+      <div class="links">
+        <a href="#showcase">Proyek</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#prompts">Prompt</a>
+        <a href="#process">Proses</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Konten AI bertema alam: visual, narasi, dan edukasi lingkungan</h1>
+        <p class="muted">Portofolio ini menampilkan karya visual AI bertema hutan tropis, pegunungan berkabut, sungai jernih, hingga pantai eksotis. Setiap proyek memadukan konsep, prompt, dan hasil untuk kebutuhan video, sosial media, dan materi edukasi.</p>
+        <a class="btn primary" href="#gallery">Lihat Galeri</a>
+        <a class="btn" href="#prompts" style="margin-left:10px;">Koleksi Prompt</a>
+      </div>
+      <div class="card">
+        <span class="tag">Hutan Tropis</span>
+        <span class="tag">Pegunungan</span>
+        <span class="tag">Sungai</span>
+        <span class="tag">Pantai</span>
+        <p class="muted" style="margin-top:10px;">Konten dibuat untuk keperluan: Reels, Shorts, TikTok, blog visual, dan presentasi edukasi.</p>
+        <ul class="list" style="margin-top:12px;">
+          <li><strong>Konsep:</strong> Pesona Alam Nusantara</li>
+          <li><strong>Durasi video:</strong> 2–3 menit (narasi + stills)</li>
+          <li><strong>Format:</strong> 9:16, 1:1, 16:9</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section id="showcase">
+      <h2 class="section-title">Showcase proyek</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Pesona Alam Nusantara</h3>
+          <p class="muted">Seri gambar sunrise di pegunungan berkabut, hutan tropis, dan sungai berkelok. Narasi tentang menjaga kelestarian.</p>
+          <ul class="list">
+            <li><strong>Output:</strong> 6 stills + naskah narasi</li>
+            <li><strong>Use case:</strong> Reels/Shorts & landing page</li>
+            <li><strong>Teknik:</strong> Fotografi digital AI, tone hangat</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Hutan Tropis & Kehidupan Liar</h3>
+          <p class="muted">Slideshow edukatif tentang ekosistem, flora-fauna, dan isu deforestasi dengan visual AI yang imersif.</p>
+          <ul class="list">
+            <li><strong>Output:</strong> 8 stills + caption edukasi</li>
+            <li><strong>Use case:</strong> Carousel & blog visual</li>
+            <li><strong>Teknik:</strong> Infografis ringan + moodboard</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Senandung Sungai</h3>
+          <p class="muted">Puisi visual pendek tentang sungai sebagai sumber kehidupan, dilengkapi ilustrasi AI bernuansa damai.</p>
+          <ul class="list">
+            <li><strong>Output:</strong> 4 stills + puisi 6 baris</li>
+            <li><strong>Use case:</strong> Pinterest & pameran cetak</li>
+            <li><strong>Teknik:</strong> Komposisi leading line sungai</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" style="margin-top:28px;">
+      <h2 class="section-title">Galeri gambar AI</h2>
+      <div class="grid gallery">
+        <img src="C:\Users\abidun\Documents\Konten AI Website\Pemandangan alam Ind.png" alt="Sunrise di pegunungan berkabut" />
+        <img src="C:\Users\abidun\Documents\Konten AI Website\Pemandangan pantai t.png" alt="Sunset di pantai eksotis" />
+        <img src="C:\Users\abidun\Documents\Konten AI Website\Hutan tropis yang le.png" alt="Hutan tropis dengan burung eksotis" />
+        <img src="C:\Users\abidun\Documents\Konten AI Website\Lanskap savana tropi.png" alt="Savana saat pagi berkabut" />
+        <img src="C:\Users\abidun\Documents\Konten AI Website\Air terjun bertingka.png" alt="Air terjun di lembah tropis" />
+      </div>
+    </section>
+
+    <!-- Prompt Library -->
+    <section id="prompts" style="margin-top:28px;">
+      <h2 class="section-title">Koleksi prompt</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Bahasa Indonesia</h3>
+          <ul class="list">
+            <li>
+              <strong>Sunrise Pegunungan:</strong>
+              <div>Pemandangan alam Indonesia saat matahari terbit, pegunungan berkabut di latar, hutan tropis lebat, sungai jernih berkelok di foreground, cahaya keemasan yang menembus kabut, komposisi wide-angle, detail dedaunan, suasana damai dan magis.</div>
+            </li>
+            <li>
+              <strong>Hutan & Fauna:</strong>
+              <div>Hutan hujan tropis dengan kanopi lebat, burung eksotis hinggap di dahan, kupu-kupu terbang, sinar matahari menembus celah daun, tekstur lembap, warna hijau kaya, atmosfer natural.</div>
+            </li>
+            <li>
+              <strong>Pantai Sunset:</strong>
+              <div>Pantai eksotis dengan ombak lembut, langit jingga keemasan saat senja, garis horizon jelas, refleksi cahaya di permukaan air, suasana tenang dan kontemplatif, format sinematik.</div>
+            </li>
+            <li>
+              <strong>Air Terjun Tropis:</strong>
+              <div>Air terjun bertingkat di lembah hijau, kabut halus di sekitar jatuhan air, bebatuan berlumut, tanaman pakis di sekitar, kontras antara putih air dan hijau hutan, komposisi leading lines.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>English</h3>
+          <ul class="list">
+            <li>
+              <strong>Mountain sunrise:</strong>
+              <div>Indonesian landscape at sunrise with misty mountains, dense tropical rainforest, a meandering clear river in the foreground, golden light piercing through the mist, wide-angle composition, detailed foliage, serene and magical mood.</div>
+            </li>
+            <li>
+              <strong>Tropical wildlife:</strong>
+              <div>Rainforest canopy with rich greenery, an exotic bird perched on a branch, butterflies fluttering, sunlight filtering through leaves, moist textures, vibrant greens, authentic natural atmosphere.</div>
+            </li>
+            <li>
+              <strong>Beach sunset:</strong>
+              <div>Exotic beach with gentle waves, golden-orange sky at dusk, clear horizon line, light reflections on the water surface, contemplative and calm mood, cinematic framing.</div>
+            </li>
+            <li>
+              <strong>Tropical waterfall:</strong>
+              <div>Tiered waterfall in a lush valley, soft mist around the cascade, mossy rocks, ferns surrounding the area, contrast between white water and deep greens, leading line composition.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" style="margin-top:28px;">
+      <h2 class="section-title">Proses kerja</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Pra-produksi</h3>
+          <ul class="list">
+            <li><strong>Riset:</strong> Lokasi, nuansa, dan target audiens</li>
+            <li><strong>Konsep:</strong> Moodboard, outline narasi, durasi</li>
+            <li><strong>Prompt:</strong> Iterasi kata kunci & gaya visual</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Produksi</h3>
+          <ul class="list">
+            <li><strong>Generasi:</strong> Batch images & seleksi kualitas</li>
+            <li><strong>Retouch:</strong> Warna, kontras, komposisi</li>
+            <li><strong>Audio:</strong> Ambience alam (opsional)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Pascaproduksi</h3>
+          <ul class="list">
+            <li><strong>Format:</strong> 9:16, 1:1, 16:9 untuk kanal distribusi</li>
+            <li><strong>Caption:</strong> Edukasi, konservasi, call-to-action</li>
+            <li><strong>Publikasi:</strong> Sosial media, blog, presentasi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" style="margin-top:28px;">
+      <h2 class="section-title">Tentang pembuat</h2>
+      <div class="card">
+        <p><strong>Profil:</strong> Profesional compliance & technical writing yang memperluas portofolio ke produksi konten AI untuk edukasi dan awareness lingkungan.</p>
+        <p class="muted">Menggabungkan pendekatan terstruktur, dokumentasi jelas, dan visual yang konsisten untuk kebutuhan audit, edukasi, dan kampanye digital.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:28px;">
+      <h2 class="section-title">Kontak</h2>
+      <div class="card">
+        <ul class="list">
+          <li><strong>Email:</strong> abidunalim27@gmail.com</li>
+          <li><strong>LinkedIn:</strong> www.linkedin.com/in/abidunalim</li>
+          <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 Alam Nusantara — Portofolio AI. All rights reserved.
+  </footer>
+
+  <script>
+    // Optional: Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
